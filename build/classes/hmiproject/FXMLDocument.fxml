@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ACPMain" prefHeight="744.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hmiproject.FXMLDocumentController">
+   <children>
+      <Pane id="paneMensch" fx:id="PaneMensch" layoutY="3.0" prefHeight="744.0" prefWidth="1008.0" stylesheets="@HMI.css">
+         <children>
+            <Button fx:id="btnMenschBack" layoutX="863.0" layoutY="692.0" mnemonicParsing="false" onAction="#handleBtnExit" prefHeight="34.0" prefWidth="101.0" text="Beenden">
+               <tooltip>
+                  <Tooltip text="Beende das Spiel" />
+               </tooltip></Button>
+            <ImageView fx:id="ViewDiceMensch" fitHeight="70.0" fitWidth="70.0" layoutX="874.0" layoutY="47.0" onMouseClicked="#handleDiceClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Dice/6.jpeg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="MF01" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="604.0" onMouseClicked="#handleMF01" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF02" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="540.0" onMouseClicked="#handleMF02" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF03" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="473.0" onMouseClicked="#handleMF03" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF04" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="408.0" onMouseClicked="#handleMF04" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF05" fitHeight="52.0" fitWidth="51.0" layoutX="215.0" layoutY="408.0" onMouseClicked="#handleMF05" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF06" fitHeight="52.0" fitWidth="51.0" layoutX="151.0" layoutY="408.0" onMouseClicked="#handleMF06" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF07" fitHeight="52.0" fitWidth="51.0" layoutX="85.0" layoutY="408.0" onMouseClicked="#handleMF07" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF08" fitHeight="52.0" fitWidth="51.0" layoutX="20.0" layoutY="408.0" onMouseClicked="#handleMF08" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF09" fitHeight="52.0" fitWidth="51.0" layoutX="20.0" layoutY="344.0" onMouseClicked="#handleMF09" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF11" fitHeight="52.0" fitWidth="51.0" layoutX="85.0" layoutY="278.0" onMouseClicked="#handleMF11" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF12" fitHeight="52.0" fitWidth="51.0" layoutX="151.0" layoutY="278.0" onMouseClicked="#handleMF12" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF13" fitHeight="52.0" fitWidth="51.0" layoutX="215.0" layoutY="278.0" onMouseClicked="#handleMF13" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF14" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="278.0" onMouseClicked="#handleMF14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF15" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="212.0" onMouseClicked="#handleMF15" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF16" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="147.0" onMouseClicked="#handleMF16" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF17" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="81.0" onMouseClicked="#handleMF17" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF18" fitHeight="52.0" fitWidth="51.0" layoutX="282.0" layoutY="16.0" onMouseClicked="#handleMF18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF19" fitHeight="52.0" fitWidth="51.0" layoutX="346.0" layoutY="16.0" onMouseClicked="#handleMF19" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF21" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="81.0" onMouseClicked="#handleMF21" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF22" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="147.0" onMouseClicked="#handleMF22" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF23" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="212.0" onMouseClicked="#handleMF23" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF24" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="278.0" onMouseClicked="#handleMF24" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF25" fitHeight="52.0" fitWidth="51.0" layoutX="479.0" layoutY="278.0" onMouseClicked="#handleMF25" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF26" fitHeight="52.0" fitWidth="51.0" layoutX="543.0" layoutY="278.0" onMouseClicked="#handleMF26" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF27" fitHeight="52.0" fitWidth="51.0" layoutX="609.0" layoutY="278.0" onMouseClicked="#handleMF27" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF28" fitHeight="52.0" fitWidth="51.0" layoutX="674.0" layoutY="278.0" onMouseClicked="#handleMF28" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF29" fitHeight="52.0" fitWidth="51.0" layoutX="674.0" layoutY="344.0" onMouseClicked="#handleMF29" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF31" fitHeight="52.0" fitWidth="51.0" layoutX="609.0" layoutY="408.0" onMouseClicked="#handleMF31" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF32" fitHeight="52.0" fitWidth="51.0" layoutX="543.0" layoutY="408.0" onMouseClicked="#handleMF32" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF33" fitHeight="52.0" fitWidth="51.0" layoutX="479.0" layoutY="408.0" onMouseClicked="#handleMF33" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF34" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="408.0" onMouseClicked="#handleMF34" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF35" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="473.0" onMouseClicked="#handleMF35" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF36" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="540.0" onMouseClicked="#handleMF36" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF37" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF37" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="604.0" onMouseClicked="#handleMF37" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF38" fitHeight="52.0" fitWidth="51.0" layoutX="412.0" layoutY="670.0" onMouseClicked="#handleMF38" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF39" fitHeight="52.0" fitWidth="51.0" layoutX="346.0" layoutY="670.0" onMouseClicked="#handleMF39" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/free.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF30" fitHeight="52.0" fitWidth="52.0" layoutX="674.0" layoutY="409.0" onMouseClicked="#handleMF30" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueStart1" fitHeight="52.0" fitWidth="52.0" layoutX="609.0" layoutY="605.0" onMouseClicked="#handleBlueLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueStart2" fitHeight="52.0" fitWidth="52.0" layoutX="674.0" layoutY="605.0" onMouseClicked="#handleBlueLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueStart3" fitHeight="52.0" fitWidth="52.0" layoutX="609.0" layoutY="670.0" onMouseClicked="#handleBlueLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueStart4" fitHeight="52.0" fitWidth="52.0" layoutX="674.0" layoutY="670.0" onMouseClicked="#handleBlueLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedStart2" fitHeight="52.0" fitWidth="52.0" layoutX="85.0" layoutY="604.0" onMouseClicked="#handleRedLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/RedStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedStart4" fitHeight="52.0" fitWidth="52.0" layoutX="85.0" layoutY="670.0" onMouseClicked="#handleRedLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/RedStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedStart1" fitHeight="52.0" fitWidth="52.0" layoutX="20.0" layoutY="605.0" onMouseClicked="#handleRedLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/RedStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedStart3" fitHeight="52.0" fitWidth="52.0" layoutX="20.0" layoutY="670.0" onMouseClicked="#handleRedLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/RedStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF00" fitHeight="52.0" fitWidth="52.0" layoutX="282.0" layoutY="670.0" onMouseClicked="#handleMF00" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/RedStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF10" fitHeight="52.0" fitWidth="52.0" layoutX="20.0" layoutY="278.0" onMouseClicked="#handleMF10" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenStart3" fitHeight="52.0" fitWidth="52.0" layoutX="20.0" layoutY="81.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenStart4" fitHeight="52.0" fitWidth="52.0" layoutX="85.0" layoutY="81.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenStart1" fitHeight="52.0" fitWidth="52.0" layoutX="20.0" layoutY="16.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenStart2" fitHeight="52.0" fitWidth="52.0" layoutX="85.0" layoutY="16.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MF20" fitHeight="52.0" fitWidth="52.0" layoutX="412.0" layoutY="16.0" onMouseClicked="#handleMF20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/YellowStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowStart1" fitHeight="52.0" fitWidth="52.0" layoutX="609.0" layoutY="16.0" onMouseClicked="#handleYellowLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/YellowStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowStart2" fitHeight="52.0" fitWidth="52.0" layoutX="674.0" layoutY="16.0" onMouseClicked="#handleYellowLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/YellowStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowStart3" fitHeight="52.0" fitWidth="52.0" layoutX="609.0" layoutY="81.0" onMouseClicked="#handleYellowLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/YellowStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowStart4" fitHeight="52.0" fitWidth="52.0" layoutX="674.0" layoutY="81.0" onMouseClicked="#handleYellowLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/YellowStart.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenHome1" fitHeight="44.0" fitWidth="44.0" layoutX="89.0" layoutY="345.0" onMouseClicked="#handleGreenHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenHome2" fitHeight="44.0" fitWidth="44.0" layoutX="155.0" layoutY="345.0" onMouseClicked="#handleGreenHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenHome3" fitHeight="44.0" fitWidth="44.0" layoutX="222.0" layoutY="345.0" onMouseClicked="#handleGreenHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="GreenHome4" fitHeight="44.0" fitWidth="44.0" layoutX="286.0" layoutY="345.0" onMouseClicked="#handleGreenHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/GreenHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowHome1" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="85.0" onMouseClicked="#handleYellowHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/yellowHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowHome2" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="151.0" onMouseClicked="#handleYellowHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/yellowHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowHome3" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="216.0" onMouseClicked="#handleYellowHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/yellowHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="YellowHome4" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="282.0" onMouseClicked="#handleYellowHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/yellowHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueHome4" fitHeight="44.0" fitWidth="44.0" layoutX="416.0" layoutY="345.0" onMouseClicked="#handleBlueHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueHome3" fitHeight="44.0" fitWidth="44.0" layoutX="482.0" layoutY="345.0" onMouseClicked="#handleBlueHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueHome2" fitHeight="44.0" fitWidth="44.0" layoutX="547.0" layoutY="345.0" onMouseClicked="#handleBlueHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BlueHome1" fitHeight="44.0" fitWidth="44.0" layoutX="613.0" layoutY="345.0" onMouseClicked="#handleBlueHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/BlueHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedHome4" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="413.0" onMouseClicked="#handleRedHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/redHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedHome3" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="477.0" onMouseClicked="#handleRedHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/redHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedHome2" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="544.0" onMouseClicked="#handleRedHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/redHome.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RedHome1" fitHeight="44.0" fitWidth="44.0" layoutX="350.0" layoutY="609.0" onMouseDragged="#handleRedHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/redHome.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnMenschNewGame1" layoutX="765.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleNextRound" prefHeight="66.0" prefWidth="90.0" text="Würfel Weitergeben" textAlignment="CENTER" wrapText="true">
+               <tooltip>
+                  <Tooltip fx:id="TTNewGame1" text="Beende den Zug und gebe die Würfel an den nächsten Spieler" />
+               </tooltip>
+            </Button>
+            <Accordion layoutX="773.0" layoutY="409.0" />
+            <ImageView fx:id="ViewDiceMenschY" fitHeight="34.0" fitWidth="44.0" layoutX="551.0" layoutY="25.0" onMouseClicked="#handleDiceClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@Images/Dice/6.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ViewDiceMenschB" fitHeight="34.0" fitWidth="44.0" layoutX="551.0" layoutY="614.0" onMouseClicked="#handleDiceClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@Images/Dice/6.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ViewDiceMenschG" fitHeight="34.0" fitWidth="44.0" layoutX="151.0" layoutY="25.0" onMouseClicked="#handleDiceClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@Images/Dice/6.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ViewDiceMenschR" fitHeight="34.0" fitWidth="44.0" layoutX="152.0" layoutY="617.0" onMouseClicked="#handleDiceClick" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@Images/Dice/6.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="greenAc" fitHeight="52.0" fitWidth="52.0" layoutX="145.0" layoutY="79.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/inactive.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yellowAc" fitHeight="52.0" fitWidth="52.0" layoutX="543.0" layoutY="81.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/inactive.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="redAc" fitHeight="52.0" fitWidth="52.0" layoutX="143.0" layoutY="670.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/inactive.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blueAc" fitHeight="52.0" fitWidth="52.0" layoutX="547.0" layoutY="666.0" onMouseClicked="#handleGreenLaunch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Mensch/inactive.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnMenschBack1" layoutX="863.0" layoutY="649.0" mnemonicParsing="false" onAction="#handleBtnMNG" prefHeight="34.0" prefWidth="101.0" text="Neues Spiel">
+               <tooltip>
+                  <Tooltip text="Starte ein Neues Spiel" />
+               </tooltip>
+            </Button>
+            <Label layoutX="89.0" layoutY="173.0" prefHeight="52.0" prefWidth="125.0" text="Mensch">
+               <font>
+                  <Font name="Constantia Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="547.0" layoutY="173.0" prefHeight="52.0" prefWidth="125.0" text="ärgere">
+               <font>
+                  <Font name="Constantia Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="496.0" prefHeight="52.0" prefWidth="125.0" text="Dich">
+               <font>
+                  <Font name="Constantia Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="539.0" layoutY="498.0" prefHeight="52.0" prefWidth="125.0" text="nicht">
+               <font>
+                  <Font name="Constantia Bold Italic" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="paneMensch" fx:id="PaneNewGame" prefHeight="750.0" prefWidth="1008.0" stylesheets="@HMI.css" visible="false">
+         <children>
+            <TitledPane animated="false" collapsible="false" layoutX="197.0" layoutY="119.0" text="Neues Spiel Starten">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="201.0" prefWidth="542.0">
+                     <children>
+                        <Button fx:id="btnSchachBack" layoutX="364.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleBtnStartMensch" prefHeight="52.0" prefWidth="134.0" text="Start">
+                           <tooltip>
+                              <Tooltip text="Starte das Spiel" />
+                           </tooltip></Button>
+                        <RadioButton fx:id="P1" layoutX="53.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleP1" selected="true" text="1 Spieler">
+                           <tooltip>
+                              <Tooltip text="Ein Spiel mit einem Spieler und 3 Computer-Gegnern" />
+                           </tooltip></RadioButton>
+                        <RadioButton fx:id="P2" layoutX="189.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleP2" text="2 Spieler">
+                           <tooltip>
+                              <Tooltip text="Ein Spiel mit zwei Spielern und zwei Computer-Gegnern" />
+                           </tooltip></RadioButton>
+                        <RadioButton fx:id="P3" layoutX="310.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleP3" text="3 Spieler">
+                           <tooltip>
+                              <Tooltip text="Ein Spiel mit drei Spielern und einem Computergegner" />
+                           </tooltip></RadioButton>
+                        <RadioButton fx:id="P4" layoutX="443.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleP4" text="4 Spieler">
+                           <tooltip>
+                              <Tooltip text="Ein Spiel mit vier Spielern und ohne Computergegner" />
+                           </tooltip></RadioButton>
+                        <Separator layoutX="-3.0" layoutY="83.0" prefHeight="7.0" prefWidth="683.0" />
+                        <Label layoutX="53.0" layoutY="14.0" prefHeight="17.0" prefWidth="494.0" text="Bitte Anzahl der Spieler angeben!" />
+                        <RadioButton fx:id="Des1" layoutX="54.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleDes1" selected="true" text="Standart">
+                           <tooltip>
+                              <Tooltip text="Nutzt das Standart-Smily-Figuren Set" />
+                           </tooltip></RadioButton>
+                        <RadioButton fx:id="Des2" layoutX="192.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleDes2" text="Figuren">
+                           <tooltip>
+                              <Tooltip text="Nutzt das alternative Figuren Set" />
+                           </tooltip></RadioButton>
+                        <Separator layoutY="195.0" prefHeight="10.0" prefWidth="544.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
